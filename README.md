@@ -11,18 +11,18 @@ Therefore, you can't use the built-in generator's template for JavaScript since 
 Most famous JavaScript libraries were meant to be used within a Node.js context. Similar way Kubling engine injects objects in execution
 contexts, Node.js has core, built-in libraries (called modules) you can simply import, like `http` and `fs`.
 
-Since they are not available in our engine, most of those libraries can't be used directly and need some adaptation, like this
+Since they are not available in our engine, most of those libraries can't be used directly and need some adaptation, like teh result of this
 template, in which we removed references to the standard `superagent` in favor of the powerful Kubling's `httpCli`.
 
 ## Generate API Client sources
-We do not include the generated sources since, in most cases, the result is a hundred of source files, which does not
+Generated sources are not included since, in most cases, the result is a hundred of source files, which does not
 make any sense to include as the generation takes usually less than a `git clone`.
 
-To generate a client, you must have `java` installed locally. Please have a look at [this doc](https://openapi-generator.tech/docs/installation#jar)
-In case you don't want to use the version we added to this repo, please read in that same document how to install the generator locally.
+To generate a client, you must have `java` installed locally. Please have a look at [this doc](https://openapi-generator.tech/docs/installation#jar)<br>
+In case you don't want to use the version added to this repo, please read in that same document how to install the generator locally.
 
 Once everything is configured just run:<br>
 `java -jar openapi-generator-cli-7.6.0.jar generate -i [path/to/spec] -g javascript -o [path/to/client/dir] -t template/`
 
-Example:
+Example:<br>
 `java -jar openapi-generator-cli-7.6.0.jar generate -i azure/spec/storage.yaml -g javascript -o azure/generated/storage/ -t template/`
