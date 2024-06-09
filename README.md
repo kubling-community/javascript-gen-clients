@@ -22,7 +22,11 @@ To generate a client, you must have `java` installed locally. Please have a look
 In case you don't want to use the version added to this repo, please read in that same document how to install the generator locally.
 
 Once everything is configured just run:<br>
-`java -jar openapi-generator-cli-7.6.0.jar generate -i [path/to/spec] -g javascript -o [path/to/client/dir] -t template/`
+```
+java -jar openapi-generator-cli-7.6.0.jar generate -i [path/to/spec] -g javascript -o [path/to/client/dir] -t template/
+```
 
-Example:<br>
-`java -jar openapi-generator-cli-7.6.0.jar generate -i azure/spec/storage.yaml -g javascript -o azure/generated/storage/ -t template/`
+Example:
+```shell
+java -jar openapi-generator-cli-7.6.0.jar generate -i azure/spec/storage.yaml -g javascript -o azure/generated/storage/ -t template/
+```
