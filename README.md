@@ -2,6 +2,22 @@
 
 [![Kubling license](https://img.shields.io/badge/license-Apache%202.0-blue.svg?style=flat-square)](LICENSE)
 
+> [!IMPORTANT]
+> **This repository is archived and no longer maintained.**
+>
+> Generating JavaScript API clients for injection into Kubling is no longer the
+> recommended integration mechanism. Configure the
+> [official OpenAPI provider](https://github.com/kubling-community/kubling-providers/tree/main/providers/openapi)
+> for OpenAPI-described APIs, or implement a
+> [custom provider](https://github.com/kubling-community/kubling-providers)
+> when source-specific behavior is required.
+>
+> This repository remains available for historical reference.
+
+## Historical documentation
+
+The instructions below describe legacy JavaScript client generation and are not the current Kubling integration path.
+
 This repository contains a list of curated and tested, auto-generated API Clients, using [openapi-generator](https://github.com/OpenAPITools/openapi-generator).
 
 It is important to note that `ApiClient` template was modified to use Kubling `httpCli`, the object injected in all JavaScript contexts.
